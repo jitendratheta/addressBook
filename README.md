@@ -73,6 +73,15 @@ chris harris
 Happy Searching
 ```
 
+### Input assumptions
+* Name will be either first name or combination of first and last name.
+* There will be only [a-z,A-Z] charset in the name.
+
+### Output expectations
+* Search will be case insensitive.
+* There can be multiple contacts with same name if added mutiple times
+* Search can be done on first name or last name
+
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Java project build tool
