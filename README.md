@@ -17,7 +17,7 @@ java -version
 ## Building and Running
 
 [Maven](https://maven.apache.org/) is used as a build tool for the project. 
-Jar from the project can be created by running following command from root directory of the project. 
+Jar from the project can be created by running following command from root directory of the project. This will run tests also.
 
 ```
 mvn clean install
