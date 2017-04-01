@@ -2,11 +2,19 @@ package com.test;
 
 import java.util.List;
 
+/**
+ * The type App.
+ */
 public class App
 {
     private FastScanner sc = new FastScanner(System.in);
     private Dictionary dictionary = new Dictionary();
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         App app = new App();
         while (true) {

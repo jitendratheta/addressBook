@@ -5,12 +5,21 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Dictionary class exposes add and search name functionality
+ */
 public class Dictionary {
 
     private TrieNode root = new TrieNode();
     private Map<Integer, Contact> contactMap = new HashMap<Integer, Contact>();
     private int contactId = 0;
 
+    /**
+     * Search name list.
+     *
+     * @param name the name
+     * @return the list
+     */
     public List<Contact> searchName(String name) {
         List<Contact> res = new ArrayList<Contact>();
         TrieNode node = getSearchedNode(root, name.toLowerCase(), 0);
@@ -29,6 +38,11 @@ public class Dictionary {
         }
     }
 
+    /**
+     * Add contact.
+     *
+     * @param contact the contact
+     */
     public void addContact(Contact contact) {
         contactMap.put(++contactId, contact);
         addWord(root, contact.getFirstName(), 0, contactId);

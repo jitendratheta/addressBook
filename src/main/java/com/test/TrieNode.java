@@ -8,9 +8,18 @@ import java.util.List;
  */
 public class TrieNode {
 
+    /**
+     * Keeps the contact id list ending at given node
+     */
     public List<Integer> contactIds;
+    /**
+     * Keeping track of child nodes for a node
+     */
     public TrieNode []edge = new TrieNode[26];
 
+    /**
+     * Instantiates a new Trie node.
+     */
     public TrieNode() {
         contactIds = new ArrayList<Integer>();
     }
