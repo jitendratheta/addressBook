@@ -1,9 +1,6 @@
 package com.test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Dictionary class exposes add and search name functionality
@@ -20,8 +17,8 @@ public class Dictionary {
      * @param name the name
      * @return the list
      */
-    public List<Contact> searchName(String name) {
-        List<Contact> res = new ArrayList<Contact>();
+    public Set<Contact> searchName(String name) {
+        Set<Contact> res = new HashSet<Contact>();
         TrieNode node = getSearchedNode(root, name.toLowerCase(), 0);
         fillAllPossibleContacts(node, res);
         return res;
@@ -49,7 +46,7 @@ public class Dictionary {
         addWord(root, contact.getLastName(), 0, contactId);
     }
 
-    private void fillAllPossibleContacts(TrieNode node, List<Contact> res) {
+    private void fillAllPossibleContacts(TrieNode node, Set<Contact> res) {
 
         if(node == null)
             return;

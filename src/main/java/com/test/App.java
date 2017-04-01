@@ -1,6 +1,7 @@
 package com.test;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * The type App.
@@ -52,7 +53,7 @@ public class App
             case 2:
                 System.out.print("Enter Name: ");
                 String name = sc.nextLine();
-                List<Contact> contacts = dictionary.searchName(name);
+                Set<Contact> contacts = dictionary.searchName(name);
                 StringBuilder sb = new StringBuilder();
                 for (Contact contact: contacts) {
                     sb.setLength(0);

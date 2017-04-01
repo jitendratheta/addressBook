@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * Unit test for simple App.
@@ -28,8 +29,8 @@ public class AppTest  {
         Contact c = new Contact();
         c.setFirstName("test");
         dictionary.addContact(c);
-        List<Contact> res = dictionary.searchName("tes");
-        Assert.assertTrue("test".equalsIgnoreCase(res.get(0).getFirstName()));
+        Set<Contact> res = dictionary.searchName("tes");
+        Assert.assertTrue(res.contains(c));
     }
 
     @Test
@@ -38,9 +39,9 @@ public class AppTest  {
         c.setFirstName("test");
         c.setLastName("name");
         dictionary.addContact(c);
-        List<Contact> res = dictionary.searchName("name");
-        Assert.assertTrue("test".equalsIgnoreCase(res.get(0).getFirstName()));
-        Assert.assertTrue("name".equalsIgnoreCase(res.get(0).getLastName()));
+        Set<Contact> res = dictionary.searchName("name");
+
+        Assert.assertTrue(res.contains(c));
     }
 
 }
