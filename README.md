@@ -82,6 +82,7 @@ Happy Searching
 ### Input assumptions
 * Name will be either first name or combination of first and last name.
 * There will be only [a-z,A-Z] charset in the name.
+* Search term will be single word with character set [a-z,A-Z]
 
 ### Output expectations
 * Search will be case insensitive.
