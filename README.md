@@ -43,6 +43,36 @@ javac -d . *.java
 java com.test.App
 ```
 
+###Sample run
+```
+➜  addressBook git:(master) ✗ java -jar ./target/addressBook-1.0-SNAPSHOT.jar
+1) Add Contact 2) Search 3) Exit
+1
+Enter Name: chris
+1) Add Contact 2) Search 3) Exit
+1
+Enter Name: Harry Potter
+1) Add Contact 2) Search 3) Exit
+1
+Enter Name: chris harris
+1) Add Contact 2) Search 3) Exit
+2
+Enter Name: har
+chris harris
+Harry Potter
+1) Add Contact 2) Search 3) Exit
+2
+Enter Name: chrs
+1) Add Contact 2) Search 3) Exit
+2
+Enter Name: chr
+chris
+chris harris
+1) Add Contact 2) Search 3) Exit
+3
+Happy Searching
+```
+
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Java project build tool

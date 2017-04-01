@@ -73,7 +73,7 @@ public class App
     }
 
     private Contact getContact(String name) {
-        String []words = name.split("[^\\w']+");
+        String []words = name.split("[^\\w]+");
         Contact contact = new Contact();
         contact.setFirstName(words[0]);
         if(words.length > 1)
