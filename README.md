@@ -1,6 +1,6 @@
 # Address Book, Add and Search
 
-Add contacts in address boook and search over it
+Add contacts in address book and search over it
 
 ## Introduction
 
@@ -50,6 +50,7 @@ java com.test.App
 ```
 
 ###Sample run
+
 ```
 ➜  addressBook git:(master) ✗ java -jar ./target/addressBook-1.0-SNAPSHOT.jar
 1) Add Contact 2) Search 3) Exit
