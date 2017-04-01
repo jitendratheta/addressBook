@@ -29,7 +29,11 @@ And for running the project one can run following from root directory
 ```
 mvn exec:java -Dexec.mainClass="com.test.App"
 ```
+Or can be run through jar as below from root directory
 
+```
+java -jar ./target/addressBook-1.0-SNAPSHOT.jar
+```
 
 Alternatively, if Maven is not present then go the directory src/main/java/com/test.
 Compile and run using following command
