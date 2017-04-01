@@ -14,6 +14,12 @@ One need to have Java 8 installed on the their system. It can be checked on cons
 java -version
 ```
 
+Maven build tool. It can be check with following command
+
+```
+mvn --version
+```
+
 ## Building and Running
 
 [Maven](https://maven.apache.org/) is used as a build tool for the project. 
